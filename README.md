@@ -15,10 +15,11 @@ Only for AI CUP group and private notes
 - `fake_label_read_csv_class_file.py`: 使用 public dataset 製造 pseudo label；
 - `mix_two_dataset.py`: 合併 public 和 private csv檔；
 - `xxx`: 最後投票；
+- `requirements.txt`: 完整環境；
 
 ## 預訓練與模型載點
 
-- `checkpoints` & `pretrained`: 目錄內 `Readme.md` 附有載點雲端；
+- `checkpoints` : 訓練模型"[這裡](https://drive.google.com/drive/u/1/folders/1QkBbK-MQQOKUcEFazGo3O0mEaN5vyCCJ)"有載點雲端；
 
 ---
 
