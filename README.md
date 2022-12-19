@@ -14,12 +14,12 @@ Only for AI CUP group and private notes
 - `crop_by_ourself.py`: 經過自動剪裁後手動重新剪裁與刪除；
 - `fake_label_read_csv_class_file.py`: 使用 public dataset 製造 pseudo label；
 - `mix_two_dataset.py`: 合併 public 和 private csv檔；
-- `xxx`: 最後投票；
+- `vote.py`: 最後投票；
 - `requirements.txt`: 完整環境；
 
 ## 預訓練與模型載點
 
-- `checkpoints` : 訓練模型"[這裡](https://drive.google.com/drive/u/1/folders/1QkBbK-MQQOKUcEFazGo3O0mEaN5vyCCJ)"有載點雲端；
+- `checkpoints` : 訓練模型"[這裡](https://drive.google.com/drive/u/4/folders/1_YqlrD4gkr5OvOByk1wyxKUIuB6mG8Qg)"有載點雲端；
 
 ---
 
@@ -30,22 +30,32 @@ Only for AI CUP group and private notes
 
 ### 訓練方法
 ```
-- data
-  - train
-    - class_0
-      - 0.jpg
-      - 1.jpg
-      - ...
-    - class_1
-      - ...
-    - ..
-  - test
-    - ...
-  - val
-    - ...
-- dataloader
+python3 -u train.py \
+/home/twsahaj458/efb5/plant_33_new_aug/ \
+--model efficientnet_b5 \
+--num-classes 33 \
+--batch-size 8 \
+--epochs 100 \
+--vflip 0.5 \
+--reprob 0.5 \
+--aug-splits 3 \
+--aa rand-m9-mstd0.5-inc1 \
+--model-ema \
+--model-ema-decay 0.9998 \
+--pretrained \
+--amp \
+--mean 0.4033 0.4388 0.3304 \
+--std 0.2322 0.2267 0.2441
 - ...
 ```
+- `/home/twsahaj458/efb5/plant_33_new_aug/`: 訓練資料夾內需包含`train`與`val`；
+- `num-classes`: 設定類別數量；
+- `batch-size`: 設定一次迭代batch；
+- `epochs`: 訓練次數；
+- `pretrained `: 是否使用預訓練；
+- `mean/std `: 為資料集平衡設定的mean與std(默認為我們強化過資料集計算值)；
+
+
 ### 測試方法
 
 ### 投票方法
