@@ -9,6 +9,12 @@ Only for AI CUP group and private notes
 
 ## 文件結構說明
 
+- `python_image_enhancement-main`: 包括水平翻轉與90度旋轉的部分；
+- `pytorch-image-models-main`: 主訓練與測試程式參考 timm；
+- `crop_by_ourself.py`: 經過自動剪裁後手動重新剪裁與刪除；
+- `fake_label_read_csv_class_file.py`: 使用 public dataset 製造 pseudo label；
+- `mix_two_dataset.py`: 合併 public 和 private csv檔；
+- `xxx`: 最後投票；
 
 ## 預訓練與模型載點
 
@@ -22,7 +28,23 @@ Only for AI CUP group and private notes
 ### 資料處理
 
 ### 訓練方法
-
+```
+- data
+  - train
+    - class_0
+      - 0.jpg
+      - 1.jpg
+      - ...
+    - class_1
+      - ...
+    - ..
+  - test
+    - ...
+  - val
+    - ...
+- dataloader
+- ...
+```
 ### 測試方法
 
 ### 投票方法
