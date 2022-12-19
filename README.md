@@ -94,7 +94,9 @@ python inference.py \
 
 [yizt/Grad-CAM.pytorch](https://github.com/yizt/Grad-CAM.pytorch)
 
+[rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models)
+
 ---
 ## Contact
-If you have any question, feel free to contact wiwi61666166@gmail.com
+If you have any question, feel free to contact wiwiwiwi6166@gmail.com
 
