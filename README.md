@@ -4,7 +4,7 @@ Only for AI CUP group and private notes
 
 ---
 ## 農地作物現況調查影像辨識競賽 - 春季賽：AI作物影像判釋
-![image](https://i.imgur.com/TXrb6aw.jpeg)
+![image](https://imgur.com/lsnkVY5.jpeg)
 ---
 
 ## 文件結構說明
