@@ -58,7 +58,25 @@ python3 -u train.py \
 
 ### 測試方法
 
+```
+python inference.py \
+/home/twsahaj458/efb5/AIcup_plant_33_autumn_private_cropped \
+--model volo_d5_224 \
+--num-classes 33 \
+--checkpoint ./output/train/20221213-161744-volo_d5_224-224/model_best.pth.tar \
+--mean 0.4033 0.4388 0.3304 \
+--std 0.2322 0.2267 0.2441
+```
+- `/home/twsahaj458/efb5/AIcup_plant_33_autumn_private_cropped`: 測試資料夾；
+- `model`: 模型選擇；
+- `num-classes`: 設定類別數量；
+- `checkpoint`: 選擇訓練過的模型點 (.pth.tar)；
+- `mean/std `: 為資料集平衡設定的mean與std(默認為我們強化過資料集計算值)；
+
+
 ### 投票方法
+
+
 
 ---
 
