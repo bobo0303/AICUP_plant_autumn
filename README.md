@@ -28,6 +28,8 @@ Only for AI CUP group and private notes
 
 ### 資料處理
 
+1. 先使用
+
 ### 訓練方法
 ```
 python3 -u train.py \
