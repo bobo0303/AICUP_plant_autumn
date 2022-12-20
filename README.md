@@ -1,5 +1,6 @@
 # AICUP-plant-Autumn (TEAM_2042)
 組員: wiwi6166, julian135707, louis52099, 97a4a07, GoofyAhh
+
 Only for AI CUP group and private notes
 
 ---
@@ -26,9 +27,6 @@ Only for AI CUP group and private notes
 
 ## 使用說明
 
-### 資料處理
-
-1. 先使用
 
 ### 訓練方法
 ```
@@ -75,8 +73,6 @@ python inference.py \
 - `checkpoint`: 選擇訓練過的模型點 (.pth.tar)；
 - `mean/std `: 為資料集平衡設定的mean與std(默認為我們強化過資料集計算值)；
 
-
-### 投票方法
 
 
 
